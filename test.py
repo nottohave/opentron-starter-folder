@@ -1,6 +1,9 @@
 from opentrons import protocol_api
 
-metadata = {'apiLevel': '2.10'}
+metadata = {
+    'apiLevel': '2.10',
+    'author': 'Cacti biochemist'
+}
 
 def run(protocol: protocol_api.ProtocolContext):
     plate = protocol.load_labware('corning_96_wellplate_360ul_flat', 1)
